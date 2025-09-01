@@ -41,8 +41,8 @@ This project was developed as part of a **group project**.
 - **Data Processing**: Patient health status processed in real-time.  
 - **Visualization**: Data displayed via a web dashboard / local monitoring station.  
 
+### Block Diagram
 ![System Block Diagram](Results/system_design.png)  
-*Figure 01: System Design / Block Diagram*  
 
 ### Pin Configurations  
 - ECG (AD8232) → A0, D5, D6  
