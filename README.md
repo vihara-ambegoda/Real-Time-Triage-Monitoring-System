@@ -8,6 +8,8 @@ This project implements a **portable triage system** that continuously monitors 
 
 The system uses **sensors + ESP8266 + GSM module** for remote monitoring, with **real-time LED + buzzer alerts** and SMS notifications.  
 
+The main objective of this project was to design and simulate a system that can monitor patients and the environment in a triage area using IoT technologies. The system ensures real-time health parameter monitoring and provides medical staff with quick insights for prioritizing treatment.  
+
 ---
 
 ## 🎯 Objectives  
@@ -34,10 +36,10 @@ This project was developed as part of a **group project**.
 
 ### ⚙️ Hardware Setup  
 - **Microcontroller**: Arduino/ESP-based controller for data acquisition.  
-- **Sensors**: Current and voltage sensors to measure energy usage.  
+- **Sensors**: Vital signs (e.g., temperature, pulse, SpO₂) and environmental sensors (humidity, temperature).  
 - **Communication**: ESP8266 WiFi module for IoT connectivity.  
-- **Data Processing**: Energy usage calculated in real-time.  
-- **Visualization**: Data displayed via web dashboard / mobile interface.  
+- **Data Processing**: Patient health status processed in real-time.  
+- **Visualization**: Data displayed via a web dashboard / local monitoring station.  
 
 ![System Block Diagram](Results/system_design.png)  
 *Figure 01: System Design / Block Diagram*  
@@ -93,6 +95,11 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 
 ## 📊 Results  
 
+- Continuous monitoring of patient vital parameters in the triage area.  
+- Data successfully transmitted to IoT cloud/local dashboard.  
+- Visualization of trends in health/environment parameters.  
+- Early-warning and forecasting models assist in quick decision-making.  
+
 - ✅ Sensor readings validated with reference medical devices  
 - ✅ Real-time triage indication using **LEDs + buzzer**  
 - ✅ Alerts successfully sent to mobile via **GSM**  
@@ -105,9 +112,10 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 ---
 
 ## 🚀 Features  
-- Continuous monitoring of power usage.  
-- ioT integration for remote access.  
-- Forecasting model for better energy management.  
+- Real-time monitoring of patient health status.  
+- IoT integration for remote access and central monitoring.  
+- Forecasting support for proactive decision-making.  
+- Scalable for multiple patients in a triage environment. 
 
 ---
 
@@ -118,6 +126,12 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 - 📡 **Cloud integration** for remote monitoring via IoT dashboard.  
 - 📱 **Mobile app interface** for real-time triage visualization.  
 
+- **Miniaturization of PCB**: Instead of mounting all sensors as external modules, future work will design a **custom PCB** that integrates sensor front-ends and microcontroller peripherals. This will make the system more compact, reliable, and portable for hospital deployment.  
+- **Advanced Communication Protocols**: Incorporating MQTT/LoRaWAN for larger hospital networks.  
+- **Mobile App Integration**: Native mobile application for quick alerts to medical staff.  
+- **AI-based Triage Assistance**: Applying ML models for prioritizing patients automatically based on their health parameters.  
+
+---
 ---
 
 ## 🛠 Tools & Software Used
