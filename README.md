@@ -1,7 +1,7 @@
 # 🏥 Real-Time-Triage-Monitoring-System
 
 IoT-Based Patient Monitoring System with Triage Level Indication
-> This is a final year **group project** developed as part of our academic curriculum.  
+> This is a final year **group project** developed as part of our academic curriculum, completed in 2021.
 > The following documentation highlights **my individual contribution** to the hardware development, sensor integration, triage algorithm implementation, and prototype design.
 
 ---
@@ -32,9 +32,7 @@ The project monitors a patient’s health parameters using various sensors and s
   
 ---
 
-## System Design  
-
-### 🛠️ Development Timeline
+## 🛠️ Development Timeline
 
 1. Selected and purchased sensor components
 2. Configured circuits and programmed microcontroller
@@ -45,6 +43,8 @@ The project monitors a patient’s health parameters using various sensors and s
 7. Integrated GSM module to send alerts to mobile
 
 ---
+
+## Hardware Design  
 
 ### ⚙️ Hardware Setup  
 - **Microcontroller**: Arduino/ESP-based controller for data acquisition.  
@@ -114,64 +114,80 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 ### Algorithm Code Example  
 ![Algorithm Code](./images/algorithm_code.png)  
 
-### LED Output Samples  
+### LED Outputs
+
+#### 🔴🟠🟡🟢 Triage Level Indication
+- 4 LED indicators (Green, Yellow, Orange, Red)
+- Buzzer alert for critical level
+- OLED display shows the triage level
+  
 ![LED Outputs](./images/led_outputs.png)  
 
 ---
 
-## 📊 Results  
+## 🧾 PCB Design
 
-- Continuous monitoring of patient vital parameters in the triage area.  
-- Data successfully transmitted to IoT cloud/local dashboard.  
-- Visualization of trends in health/environment parameters.  
-- Early-warning and forecasting models assist in quick decision-making.  
+Designed using EasyEDA. Custom footprints were created for unavailable components.
 
-- ✅ Sensor readings validated with reference medical devices  
-- ✅ Real-time triage indication using **LEDs + buzzer**  
-- ✅ Alerts successfully sent to mobile via **GSM**  
-- ✅ PCB design in **EasyEDA** + enclosure modeled in **SolidWorks**  
+- Copper Thickness: 2mm
+- Track Width: 0.6mm
+- Clearance: 0.3mm
+- Vias: 5 (0.7mm diameter)
 
 ![PCB Design](./images/pcb_design.png)  
-![3D Enclosure](./images/3d_model.png)  
-![Final Prototype](./images/final_prototype.png)  
 
 ---
 
-## 🚀 Features  
-- Real-time monitoring of patient health status.  
-- IoT integration for remote access and central monitoring.  
-- Forecasting support for proactive decision-making.  
-- Scalable for multiple patients in a triage environment. 
+## 📦 Prototype Model
+
+Modeled in **SOLIDWORKS 2020** with three main parts:
+
+1. Enclosure Box
+2. PCB
+3. Top Lid
+
+![3D Enclosure](./images/3d_model.png)
+
+---
+
+## 📲 GSM Alert System
+
+Used **SIM800L** to send SMS alerts to mobile devices when triage level is critical.
+
+![Alerts](./images/alerts.png)
+
+---
+
+## ✅ Sensor Accuracy Validation
+
+| Sensor     | Validation Device       | Result |
+|------------|-------------------------|--------|
+| MAX30100   | Pulse Oximeter          | ✅ Matched |
+| MLX90614   | Digital Thermometer     | ✅ Matched |
+| AD8232     | ECG Visual Graph Output | ✅ Verified |
 
 ---
 
 ## 🚀 Future Improvements  
 
-- 📏 **Miniaturization**: Custom PCB integrating sensor front-ends directly into the MCU to reduce size.  
-- 🔋 **Low-power optimization** for longer operation on battery.  
-- 📡 **Cloud integration** for remote monitoring via IoT dashboard.  
-- 📱 **Mobile app interface** for real-time triage visualization.  
+- Custom PCB integrating sensor front-ends directly into the MCU to reduce size.  
+- Low-power optimization for longer operation on battery.
+- Fully 3D print and assemble the enclosure for field deployment.
+- Expand dashboard integration with real-time triage history.
 
-- **Miniaturization of PCB**: Instead of mounting all sensors as external modules, future work will design a **custom PCB** that integrates sensor front-ends and microcontroller peripherals. This will make the system more compact, reliable, and portable for hospital deployment.  
-- **Advanced Communication Protocols**: Incorporating MQTT/LoRaWAN for larger hospital networks.  
-- **Mobile App Integration**: Native mobile application for quick alerts to medical staff.  
-- **AI-based Triage Assistance**: Applying ML models for prioritizing patients automatically based on their health parameters.  
-
----
 ---
 
 ## 🛠 Tools & Software Used
-- xxxxxxxxxxxxxxxxxx
-
----
-
-## 🎯 Skills
-- xxxxxxxxxxxxx
+- Arduino IDE – Programming the NodeMCU ESP8266 microcontroller
+- EasyEDA – Designing the PCB circuit and layout
+- SolidWorks 2020 – 3D modeling the prototype enclosure
 
 ---
 
 ## 📄 License
-This project is shared for educational purposes. Please give credit if you use it.
+This repository documents the individual hardware-focused contribution to a group-based IoT healthcare project.
+Other group members were responsible for the server-side dashboard, database integration, and UI development.
+This project is solely shared for educational purposes. Please give credit if you use it.
 
 ---
 
