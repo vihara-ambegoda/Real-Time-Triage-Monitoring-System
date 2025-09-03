@@ -106,7 +106,7 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 | 16–49 | 2 | 🟠 Orange | Immediate Help |
 | ≥50   | 1 | 🔴 Red | Emergency |  
 
-### Serial Monitor Outputs
+### Arduino Code Snippet & Serial Monitor Outputs
 ![Algorithm Code](serial-monitor.png)  
 
 ### LED Outputs
@@ -129,7 +129,7 @@ Designed using EasyEDA. Custom footprints were created for unavailable component
 - Clearance: 0.3mm
 - Vias: 5 (0.7mm diameter)
 
-![PCB Design](pcb.png)  
+![PCB Design](pcb.PNG)  
 
 ---
 
@@ -141,7 +141,7 @@ Modeled in **SOLIDWORKS 2020** with three main parts:
 2. PCB
 3. Top Lid
 
-![3D Enclosure](prototype.png)
+![3D Enclosure](prototype.PNG)
 
 ---
 
@@ -149,7 +149,7 @@ Modeled in **SOLIDWORKS 2020** with three main parts:
 
 Used **SIM800L** to send SMS alerts to mobile devices when triage level is critical.
 
-![Alerts](alerts.png)
+![Alerts](alerts.PNG)
 
 ---
 
