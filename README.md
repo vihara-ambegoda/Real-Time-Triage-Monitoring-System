@@ -32,7 +32,7 @@ The project monitors a patient’s health parameters using various sensors and s
   
 ---
 
-## 🛠️ System Design  
+## System Design  
 
 ### 🛠️ Development Timeline
 
@@ -53,8 +53,18 @@ The project monitors a patient’s health parameters using various sensors and s
 - **Data Processing**: Patient health status processed in real-time.  
 - **Visualization**: Data displayed via a web dashboard / local monitoring station.  
 
-### Block Diagram
-![System Block Diagram](Results/system_design.png)  
+### 🧩 Components Used
+
+| Component | Description |
+|----------|-------------|
+| NodeMCU ESP8266 | Microcontroller + Wi-Fi |
+| AD8232 | ECG Heart Monitoring Sensor |
+| MAX30100 | Pulse Oximeter & Heart Rate Sensor |
+| MLX90614 | Contactless Temperature Sensor |
+| SIM800L | GSM Module |
+| LCD Display | OLED for output display |
+
+> Note: NIBP sensor was planned but couldn't be procured due to the pandemic.
 
 ### Pin Configurations  
 - ECG (AD8232) → A0, D5, D6  
@@ -62,6 +72,7 @@ The project monitors a patient’s health parameters using various sensors and s
 - Temperature Sensor (MLX90614) → I2C (D1, D2)  
 - LCD Display → I2C (D1, D2) + DC/RES (D5, D6)  
 - GSM Module (SIM800L) → D3 (RX), D4 (TX), external 3.7V–4.4V supply  
+> A 9V battery + LM2596 buck converter was used to power the GSM module (3.4V – 4.4V).
 
 ### Circuit Diagrams  
 ![ECG Circuit](./images/ecg_circuit.png)  
@@ -74,7 +85,7 @@ The project monitors a patient’s health parameters using various sensors and s
 
 The algorithm assigns **points** to vital signs and generates a triage level.  
 
-### Vital Sign Ranges  
+### 📊 Vital Sign Classification
 
 | Vital Sign | Level A | Level B | Level C | Level D |
 |------------|---------|---------|---------|---------|
@@ -82,11 +93,14 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 | SpO₂ (%) | 94–100 | 90–93 | 85–89 | <85 |
 | Temp (°C) | 36.1–37.2 | 35–36 / 37.3–38.4 | 34.5–34.9 / 38.5–39.4 | <34.5 / >39.4 |
 
-### Scoring Rules  
-- Level A → **1 point**  
-- Level B → **5 points**  
-- Level C → **16 points**  
-- Level D → **50 points**  
+### 🧮 Scoring System
+
+| Level | Points |
+|-------|--------|
+| A     | 1      |
+| B     | 5      |
+| C     | 16     |
+| D     | 50     |
 
 ### Triage Decision Table  
 
