@@ -19,7 +19,6 @@ The project monitors a patient’s health parameters using various sensors and s
 - Automated **triage level calculation** using scoring algorithm.  
 - Emergency alerts via **LED, buzzer, and GSM SMS**.  
 - Prototype with PCB + 3D printed enclosure.  
-- 🔮 Future Scope: Miniaturize the PCB by designing sensor circuits at **microcontroller integration level**, instead of mounting all sensors as separate modules.  
 
 ---
 
@@ -34,6 +33,18 @@ The project monitors a patient’s health parameters using various sensors and s
 ---
 
 ## 🛠️ System Design  
+
+### 🛠️ Development Timeline
+
+1. Selected and purchased sensor components
+2. Configured circuits and programmed microcontroller
+3. Read sensor outputs and validated accuracy
+4. Developed triage algorithm and integrated it into system
+5. Designed PCB using EasyEDA
+6. Designed 3D prototype model using SolidWorks
+7. Integrated GSM module to send alerts to mobile
+
+---
 
 ### ⚙️ Hardware Setup  
 - **Microcontroller**: Arduino/ESP-based controller for data acquisition.  
