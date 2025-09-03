@@ -1,14 +1,16 @@
-# Real-Time-Triage-Monitoring-System
-Real-Time Monitoring System for a hospital Triage Area
+# 🏥 Real-Time-Triage-Monitoring-System
+
+IoT-Based Patient Monitoring System with Triage Level Indication
+> This is a final year **group project** developed as part of our academic curriculum.  
+> The following documentation highlights **my individual contribution** to the hardware development, sensor integration, triage algorithm implementation, and prototype design.
 
 ---
 
 ## 📌 Project Overview  
-This project implements a **portable triage system** that continuously monitors vital signs — ECG, heart rate, oxygen saturation (SpO₂), and body temperature — and automatically classifies patients into triage levels (Green, Yellow, Orange, Red).  
 
-The system uses **sensors + ESP8266 + GSM module** for remote monitoring, with **real-time LED + buzzer alerts** and SMS notifications.  
+The project monitors a patient’s health parameters using various sensors and sends the data securely to an IoT dashboard. Real-time alerts and triage levels are indicated on a hardware module and also sent via SMS using GSM.
 
-The main objective of this project was to design and simulate a system that can monitor patients and the environment in a triage area using IoT technologies. The system ensures real-time health parameter monitoring and provides medical staff with quick insights for prioritizing treatment.  
+![System Block Diagram](Results/system_design.png)  
 
 ---
 
@@ -21,15 +23,14 @@ The main objective of this project was to design and simulate a system that can 
 
 ---
 
-## 📌 Note on Contribution  
-This project was developed as part of a **group project**.  
-- The repository and documentation presented here focus only on **my contribution** to the project.  
-- My tasks included:  
-  - Designing and simulating the triage monitoring system.  
-  - Implementing IoT connectivity with ESP8266.  
-  - Developing real-time monitoring.  
-  - Preparing the initial design for PCB miniaturization.  
+## ⚙️ My Individual Contribution
 
+- Hardware setup and circuit design
+- Sensor integration and data collection
+- Implementation of a custom triage algorithm
+- PCB and prototype model design
+- GSM-based alert message system
+  
 ---
 
 ## 🛠️ System Design  
