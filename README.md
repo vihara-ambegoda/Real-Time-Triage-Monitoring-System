@@ -10,7 +10,7 @@ IoT-Based Patient Monitoring System with Triage Level Indication
 
 The project monitors a patient’s health parameters using various sensors and sends the data securely to an IoT dashboard. Real-time alerts and triage levels are indicated on a hardware module and also sent via SMS using GSM.
 
-![System Block Diagram](Results/system_design.png)  
+![System Block Diagram](block-diagram.png)  
 
 ---
 
@@ -74,11 +74,6 @@ The project monitors a patient’s health parameters using various sensors and s
 - GSM Module (SIM800L) → D3 (RX), D4 (TX), external 3.7V–4.4V supply  
 > A 9V battery + LM2596 buck converter was used to power the GSM module (3.4V – 4.4V).
 
-### Circuit Diagrams  
-![ECG Circuit](./images/ecg_circuit.png)  
-![Temperature Sensor Circuit](./images/temp_circuit.png)  
-![LCD + GSM Circuit](./images/lcd_gsm_circuit.png)  
-
 ---
 
 ## 🧮 Triage Algorithm  
@@ -111,8 +106,8 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 | 16–49 | 2 | 🟠 Orange | Immediate Help |
 | ≥50   | 1 | 🔴 Red | Emergency |  
 
-### Algorithm Code Example  
-![Algorithm Code](./images/algorithm_code.png)  
+### Serial Monitor Outputs
+![Algorithm Code](serial-monitor.png)  
 
 ### LED Outputs
 
@@ -121,7 +116,7 @@ The algorithm assigns **points** to vital signs and generates a triage level.
 - Buzzer alert for critical level
 - OLED display shows the triage level
   
-![LED Outputs](./images/led_outputs.png)  
+![LED Outputs](led_indications.png)  
 
 ---
 
@@ -134,7 +129,7 @@ Designed using EasyEDA. Custom footprints were created for unavailable component
 - Clearance: 0.3mm
 - Vias: 5 (0.7mm diameter)
 
-![PCB Design](./images/pcb_design.png)  
+![PCB Design](pcb.png)  
 
 ---
 
@@ -146,7 +141,7 @@ Modeled in **SOLIDWORKS 2020** with three main parts:
 2. PCB
 3. Top Lid
 
-![3D Enclosure](./images/3d_model.png)
+![3D Enclosure](prototype.png)
 
 ---
 
@@ -154,7 +149,7 @@ Modeled in **SOLIDWORKS 2020** with three main parts:
 
 Used **SIM800L** to send SMS alerts to mobile devices when triage level is critical.
 
-![Alerts](./images/alerts.png)
+![Alerts](alerts.png)
 
 ---
 
