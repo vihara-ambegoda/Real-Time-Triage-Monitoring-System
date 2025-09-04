@@ -164,7 +164,7 @@ Used **SIM800L** to send SMS alerts to mobile devices when triage level is criti
 
 ---
 
-📽️ **Demo Video:** ![Click here to download/view](Triage Monitor.mp4)
+📽️ **Demo Video:** ![Click here to download/view](Triage%20Monitor.mp4)
 
 ---
 
