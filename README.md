@@ -167,7 +167,7 @@ Used **SIM800L** to send SMS alerts to mobile devices when triage level is criti
 
 - **MAX30100 Pulse Oximeter Sensor**: The sensor had issues with built-in resistors and didn’t work well with ESP-12E. I added extra resistors to fix it, but it still had issues with other sensors.
 - **ECG Pad Placement**: Correct placement of AD8232 ECG pads on the body was tricky. After research, I placed them near the chest for more reliable readings.
- > A. Newton, “IoT Based ECG Monitoring with AD8232 ECG Sensor & ESP32.” how2electronics.com, May 17, 2020. [Online]. Available: [Here](https://how2electronics.com/iot-ecg-monitoring-ad8232-sensor-esp32/). (accessed May. 10, 2021)
+ > A. Newton, “IoT Based ECG Monitoring with AD8232 ECG Sensor & ESP32.” how2electronics.com, May 17, 2020. [Online]. Available: [Here](https://how2electronics.com/iot-ecg-monitoring-ad8232-sensor-esp32/). (Accessed May. 10, 2021)
 - **GSM Module Antenna**: The default helical antenna didn’t work well indoors, so I replaced it with a 3dBi GSM antenna for better reception.  
 - **Prototype Bulkiness**: The device was large because sensors and modules were mounted separately.
 - **COVID-19 Pandemic**: Purchasing parts, doing proper testing, and real-world validation were limited.
