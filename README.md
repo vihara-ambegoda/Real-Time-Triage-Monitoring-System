@@ -60,10 +60,11 @@ The project monitors a patient’s health parameters using various sensors and s
 |----------|-------------|
 | NodeMCU ESP8266 | Microcontroller + Wi-Fi |
 | AD8232 | ECG Heart Monitoring Sensor |
-| MAX30100 | Pulse Oximeter & Heart Rate Sensor |
+| MAX30102 | Pulse Oximeter & Heart Rate Sensor |
 | MLX90614 | Contactless Temperature Sensor |
 | SIM800L | GSM Module |
 | LCD Display | OLED for output display |
+| RF 315MHz Antenna (2–3 dBi) | Antenna for RF communication at 315MHz |
 
 > Note: NIBP sensor was planned to be used for measuring blood pressure, but couldn't be procured due to the pandemic.
 
@@ -149,7 +150,7 @@ Modeled in **SOLIDWORKS 2020** with three main parts:
 
 Used **SIM800L** to send SMS alerts to mobile devices when triage level is critical.
 
-![Alerts](alerts.PNG)
+![Alerts](alerts.png)
 
 ---
 
