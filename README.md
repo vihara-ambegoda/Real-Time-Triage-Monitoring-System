@@ -164,6 +164,10 @@ Used **SIM800L** to send SMS alerts to mobile devices when triage level is criti
 
 ---
 
+📽️ **Demo Video:** [Click here to download/view](Triage Monitor.mp4)
+
+---
+
 ## ⚠️ Issues Faced  
 
 - **MAX30100 Pulse Oximeter Sensor**: The sensor had issues with built-in resistors and didn’t work well with ESP-12E. I added extra resistors to fix it, but it still had issues with other sensors.
