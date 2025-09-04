@@ -193,7 +193,9 @@ Used **SIM800L** to send SMS alerts to mobile devices when triage level is criti
 
 ## 📄 License
 This repository documents the individual hardware-focused contribution to a group-based IoT healthcare project.
+
 Other group members were responsible for the server-side dashboard, database integration, and UI development.
+
 This project is solely shared for educational purposes. Please give credit if you use it.
 
 ---
