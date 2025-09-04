@@ -164,24 +164,12 @@ Used **SIM800L** to send SMS alerts to mobile devices when triage level is criti
 ---
 
 ## ⚠️ Issues Faced  
-- Some sensors gave inaccurate readings and needed calibration.  
-- WiFi connection was sometimes unstable.  
-- The prototype was bulky since many modules were mounted separately.  
-- Due to the **COVID-19 pandemic**, component purchasing and testing was difficult and limited, but it also showed why this project is important for safer triage monitoring.  
 
-## ⚠️ Issues Faced  
-
-- **ESP-12E Programming**: At first, I used Arduino Mega, but later switched to ESP-12E. The pin mapping was confusing since the board labels didn’t match the GPIO numbers. This required re-coding and installing the NodeMCU package in Arduino IDE.  
-
-- **MAX30100 Pulse Oximeter Sensor**: The module had design issues with its pull-up resistors, which caused it to fail with ESP-12E. I solved it by adding external 4.7kΩ resistors, but it still caused conflicts when used with other I²C sensors.  
-
+- **MAX30100 Pulse Oximeter Sensor**: The sensor had issues with built-in resistors and didn’t work well with ESP-12E. I added extra resistors to fix it, but it still had issues with other sensors.
 - **ECG Pad Placement**: Correct placement of AD8232 ECG pads on the body was tricky. After research, I placed them near the chest for more reliable readings.  
-
 - **GSM Module Antenna**: The default helical antenna didn’t work well indoors, so I replaced it with a 3dBi GSM antenna for better reception.  
-
-- **Prototype Bulkiness**: The device was large because sensors and modules were mounted separately instead of being integrated into one PCB.  
-
-- **COVID-19 Pandemic**: Purchasing parts, doing proper testing, and real-world validation were limited due to restrictions. However, the pandemic highlighted the importance of this system for safer triage monitoring.  
+- **Prototype Bulkiness**: The device was large because sensors and modules were mounted separately.
+- **COVID-19 Pandemic**: Purchasing parts, doing proper testing, and real-world validation were limited.
 
 ---
 
