@@ -1,7 +1,8 @@
-# 🏥 Real-Time-Triage-Monitoring-System
+# 🏥 Real Time Triage Monitoring System
 
 IoT-Based Patient Monitoring System with Triage Level Indication
 > This is a final year **group project** developed as part of our academic curriculum, completed in 2021.
+
 > The following documentation highlights **my individual contribution** to the hardware development, sensor integration, triage algorithm implementation, and prototype design.
 
 ---
@@ -160,6 +161,14 @@ Used **SIM800L** to send SMS alerts to mobile devices when triage level is criti
 | MAX30100   | Pulse Oximeter          | ✅ Matched |
 | MLX90614   | Digital Thermometer     | ✅ Matched |
 | AD8232     | ECG Visual Graph Output | ✅ Verified |
+
+---
+
+## ⚠️ Issues Faced  
+- Some sensors gave inaccurate readings and needed calibration.  
+- WiFi connection was sometimes unstable.  
+- The prototype was bulky since many modules were mounted separately.  
+- Due to the **COVID-19 pandemic**, component purchasing and testing was difficult and limited, but it also showed why this project is important for safer triage monitoring.  
 
 ---
 
